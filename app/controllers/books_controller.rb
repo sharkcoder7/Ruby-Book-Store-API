@@ -32,5 +32,4 @@ class BooksController < ApplicationController
     params.require(:book).permit(:name, :author, :category, :current_chapter,
                                  :current_page, :total_pages)
   end
-
 end
