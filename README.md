@@ -2,7 +2,7 @@
 
 ## Book Library CMS Project with Redux
 
-This repository contains a Ruby on Rails API as one of two compatible backends for the following project: [React-Redux Book Library CMS](https://github.com/PolarisTLX/redux-book-store)
+This repository contains a Ruby on Rails API as one of two compatible backends for the following project: [React-Redux Book Library](https://github.com/PolarisTLX/react-redux-book-library)
 
 This is a full-stack project where you can add, delete, and edit books from the library as well as keep track of your current progress through your books.
 
@@ -16,7 +16,7 @@ And the backend was built using one of two compatible sets of technologies:
 * Ruby on Rails as the backend server
 * SQLite3 as the database
 
-OR - [An alternate compatible backend located here](https://github.com/PolarisTLX/redux-book-store) which uses:
+OR - [An alternate compatible backend located here](https://github.com/PolarisTLX/react-redux-book-library) which uses:
 
 * Express.js and Node.js as the backend server
 * MongoDB (through MLab) as the database
@@ -25,7 +25,7 @@ OR - [An alternate compatible backend located here](https://github.com/PolarisTL
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes using the Ruby on Rails API with SQLite3 database.  You will also want to run the frontend client from [this repository](https://github.com/PolarisTLX/redux-book-store).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes using the Ruby on Rails API with SQLite3 database.  You will also want to run the frontend client from [this repository](https://github.com/PolarisTLX/react-redux-book-library).
 
 ### Prerequisites
 
@@ -45,7 +45,7 @@ This project requires:
 If you open your browser to `http://localhost:5000/books` you should see the database, initially consisting of an empty array `[]`.
 
 
-* You must also then clone the [frontend repository from here](https://github.com/PolarisTLX/redux-book-store)
+* You must also then clone the [frontend repository from here](https://github.com/PolarisTLX/react-redux-book-library)
 * Open a separate terminal window/tab and cd into this folder and enter `npm run client-install` to install the necessary packages
 * Run `npm run client`.  This should open the UI in your browser at address: `http://localhost:3000/`
 
