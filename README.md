@@ -13,8 +13,8 @@ The frontend of this project was built using:
 
 And the backend was built using one of two compatible sets of technologies:
 
-* Ruby on Rails as the backend
-* PostgreSQL as the database
+* Ruby on Rails as the backend server
+* SQLite3 as the database
 
 OR - [An alternate compatible backend located here](https://github.com/PolarisTLX/redux-book-store) which uses:
 
@@ -25,7 +25,7 @@ OR - [An alternate compatible backend located here](https://github.com/PolarisTL
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes using the Ruby on Rails API with PostgreSQL database.  You will also want to run the frontend client from [this repository](https://github.com/PolarisTLX/redux-book-store).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes using the Ruby on Rails API with SQLite3 database.  You will also want to run the frontend client from [this repository](https://github.com/PolarisTLX/redux-book-store).
 
 ### Prerequisites
 
@@ -33,30 +33,25 @@ This project requires:
 * Node.js
 * Ruby 2.4.1
 * Ruby on Rails 5.2.0
-* PostgreSQL 9.X+
 
-### Installing
+### Installing and Running
 
 * Clone this repository
 * cd into the folder
 * Run `bundle install` to install the necessary gems
-* Run `sudo service postgresql start`
-* Run `rails s` to start the server. Leave this terminal open.
+* Run `rails db:migrate`
+* Run `rails s -p 5000` to start the backend server on Port 5000. Leave this terminal open.
+
+If you open your browser to `http://localhost:5000/books` you should see the database, initially consisting of an empty array `[]`.
 
 
-* You must also clone the [frontend repository from here](https://github.com/PolarisTLX/redux-book-store)
-* Open a seperate terminal window/tab and cd into this folder and enter `npm run client-install` npm run client-install to install the necessary packages
-* TO BE COMPLETED
+* You must also then clone the [frontend repository from here](https://github.com/PolarisTLX/redux-book-store)
+* Open a separate terminal window/tab and cd into this folder and enter `npm run client-install` to install the necessary packages
+* Run `npm run client`.  This should open the UI in your browser at address: `http://localhost:3000/`
 
-### Serve Project
+You can now interact with the application. Add books, edit them etc.  You will also see the updates to the database if you refresh your browser's `http://localhost:5000/books` tab as you make changes.
 
-Run the servers with the following command:
 
-```
-npm run dev
-```
-
-Once its running, head over to your browser to [see the Library](http://localhost:3000/).
 
 ### Deploy on Heroku
 
